@@ -47,7 +47,7 @@
 			/*box-shadow: inset 0 0 0 1px #fff;*/
 		}
 		.content-wlf img {
-			display: block;
+			display: none;
 			width: 100px;
 			height: 100px;
 		}
@@ -65,13 +65,13 @@
 		<div class="record">		
 			<label for="score">得分</label>
 			<input type="text" id="score">
-			<label for="time">得分率</label>
-			<input type="text" id="time"> 
-			<label for="rate">倒计时</label>
+			<label for="rate">得分率</label>
 			<input type="text" id="rate">
+			<label for="only">倒计时</label>
+			<input type="text" id="only"> 
 		</div>
 		<!-- 游戏内容区 -->
-		<div class="content-wlf clearfix">
+		<div class="content-wlf clearfix" id="con">
 			<div><img src="images/susliks.png" title="" alt=""></div>
 			<div><img src="images/susliks.png" title="" alt=""></div>
 			<div><img src="images/susliks.png" title="" alt=""></div>
@@ -83,5 +83,6 @@
 			<div><img src="images/susliks.png" title="" alt=""></div>
 		</div>
 	</div>
+	<script src="js/common.js"></script>
 </body>
 </html>
