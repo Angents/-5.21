@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>码农特工——积分赛【2016.5.21】【打地鼠】</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<style>
+		.wrap {
+			width: 400px;
+			height: 450px;
+			margin: 20px auto;
+			border: 1px solid red;
+		}
+		.press {
+			width: 400px;
+			height: 50px;
+			padding-left: 50px; 
+		}
+		.press input {
+			float: left;
+			width: 90px;
+			height: 30px;	
+			margin-right: 10px;
+			border-radius: 10px;
+		}
+		.des {
+			width: 400px;
+			height: 50px;
+		}
+		.des input {
+			/*float: left;*/
+			width: 60px;
+		}
+		.con div {
+			float: left;
+			width: 100px;
+			height: 100px;
+			margin-right: 20px;
+			box-shadow: inset 0 0 0 1px black;
+		}
+		.con img {
+			display: none;
+			float: left;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="press">
+			<input type="button" value="开始游戏">
+			<input type="button" value="暂停游戏">
+			<input type="button" value="结束游戏">
+		</div>
+		<div class="des">
+			<label for="">分数：</label>
+			<input type="text" id="goal">
+			<label for="">命中率：</label>
+			<input type="text">
+			<label for="">倒计时：</label>
+			<input type="text" id="only">
+		</div>
+		<div class="con" id="pic">
+			<div>
+				<img src="images/mouse.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/mouse.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/mouse.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/mouse.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/mouse.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/mouse.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<script>
+		var imgs = document.getElementById("pic").getElementsByTagName("img");
+		var btns = document.getElementById("pic").getElementsByTagName("div");
+		var goal = document.getElementById("goal");
+		var only = document.getElementById("only");
+		var time = null;
+		var count = 0;
+		var second = 10;
+		var ranNum = Math.floor(Math.random() * imgs.length);
+		function up() {
+			imgs[ranNum].style.display = "none";
+			ranNum = Math.floor(Math.random() * imgs.length);
+			// console.log(ranNum);
+			imgs[ranNum].style.display = "block";
+			for (var i = 0; i < btns.length; i++) {
+				if (i == ranNum) {
+					imgs[i].onclick = function(i) {
+						imgs[ranNum].style.display = "none";
+						count++
+						goal.value = count;
+					}	
+				}	
+			}
+		}
+		var timer = setInterval(function() {
+			second--;
+			only.value = second;
+			if (second <= 0) {
+				clearInterval(time);
+				clearInterval(timer);
+				alert("时间到！");
+			}
+		}, 1000);
+		time = setInterval(function() {		
+			up();
+		}, 1000);
+	</script>
+</body>
+</html>
