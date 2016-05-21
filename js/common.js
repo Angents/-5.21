@@ -39,6 +39,6 @@ time = setInterval(function() {
 con.onmousemove = function () {
     con.style.cursor = "url(images/cursor.png),auto";
 }	
-<audio autoplay="autoplay"  loop="loop" id="bgm">
-	<source src="audio/bgm.wav" type="audio/wav"/ id="bgm">
-</audio>
+// <audio autoplay="autoplay"  loop="loop" id="bgm">
+// 	<source src="audio/bgm.wav" type="audio/wav"/ id="bgm">
+// </audio>
