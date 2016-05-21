@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>码农特工——积分赛【2016.5.21】</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+	<div class="wrap-wlf">
+		<!-- 控制游戏 -->
+		<div class="control-wlf">			
+			<input type="button" class="start-wlf" id="start" value="开始" readonly="value">
+			<input type="button" class="suspend-wlf" id="suspend" value="暂停" readonly="value">
+			<input type="button" class="end-wlf" id="end" value="停止" readonly="value">
+		</div>
+		<!-- 游戏记录 -->
+		<div class="record">		
+			<label for="score">得分</label>
+			<input type="text" readonly="value" id="score">
+			<label for="rate">得分率</label>
+			<input type="text" readonly="value" id="rate">
+			<label for="only">倒计时</label>
+			<input type="text" readonly="value" id="only"> 
+		</div>
+		<!-- 游戏内容区 -->
+		<div class="content-wlf clearfix" id="con">
+			<div style="left : 108px; top : 74px;"><img src="images/susliks.png" title="" alt=""></div>
+			<div style="left : 260px; top : 71px;"><img src="images/susliks.png" title="" alt=""></div>
+			<div style="left : 423px; top : 75px;"><img src="images/susliks.png" title="" alt=""></div>
+			<div style="left : 84px; top : 157px;"><img src="images/susliks.png" title="" alt=""></div>
+			<div style="left : 263px; top : 157px;"><img src="images/susliks.png" title="" alt=""></div>
+			<div style="left : 428px; top : 155px;"><img src="images/susliks.png" title="" alt=""></div>
+			<div style="left : 78px; top : 254px;"><img src="images/susliks.png" title="" alt=""></div>
+			<div style="left : 263px; top : 250px;"><img src="images/susliks.png" title="" alt=""></div>
+			<div style="left : 444px; top : 250px;"><img src="images/susliks.png" title="" alt=""></div>
+		</div>
+		<audio autoplay="autoplay"  loop="loop" id="bgm">
+			<source src="audio/bgm.wav" type="audio/wav"/ id="bgm">
+		</audio>
+	</div>
+	<script src="js/common.js"></script>
+</body>
+</html>
