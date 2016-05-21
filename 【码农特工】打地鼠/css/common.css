@@ -21,7 +21,7 @@
  	-webkit-user-select: none;
 }
  .record {
- 	width: 360px;
+ 	width: 500px;
  	height: 50px;
  	margin: 0 auto;
  	font-size: 18px;
@@ -67,6 +67,7 @@
  	width: 30px;
  	height: 30px;
  	margin-right: 10px;
+ 	-webkit-user-select: none;
  }
  .play p {
  	color: #8caf22;
