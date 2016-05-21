@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>码农特工——积分赛【2016.5.21】</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<style>
+		.wrap-wlf {
+			width: 600px;
+			padding-top: 50px;
+			margin: 0 auto;
+		}
+		.control-wlf {
+			width: 200px;
+			height: 50px;
+			margin: 0 auto;
+		}
+		.control-wlf input {
+			width: 60px;
+			height: 30px;
+			background: #ccc;
+			color: #fff;
+			font-size: 18px;
+			text-align: center;
+			line-height: 30px;
+		}
+		.record {
+			width: 500px;
+			height: 50px;
+			margin: 0 auto;
+			font-size: 18px;
+		}
+		.record input {
+			width: 105px;
+		}
+		.content-wlf {
+			width: 500px;
+			height: 300px;
+			padding: 80px 80px 60px 90px;
+			background: url("images/background.png") no-repeat;
+		}
+		.content-wlf div {
+			float: left;
+			width: 100px;
+			height: 100px;
+			margin-right: 66px;
+			/*box-shadow: inset 0 0 0 1px #fff;*/
+		}
+		.content-wlf img {
+			display: block;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap-wlf">
+		<!-- 控制游戏 -->
+		<div class="control-wlf">			
+			<input type="button" class="start-wlf" id="start" value="开始">
+			<input type="button" class="suspend-wlf" id="suspend" value="暂停">
+			<input type="button" class="end-wlf" id="end" value="停止">
+		</div>
+		<!-- 游戏记录 -->
+		<div class="record">		
+			<label for="score">得分</label>
+			<input type="text" id="score">
+			<label for="time">得分率</label>
+			<input type="text" id="time"> 
+			<label for="rate">倒计时</label>
+			<input type="text" id="rate">
+		</div>
+		<!-- 游戏内容区 -->
+		<div class="content-wlf clearfix">
+			<div><img src="images/susliks.png" title="" alt=""></div>
+			<div><img src="images/susliks.png" title="" alt=""></div>
+			<div><img src="images/susliks.png" title="" alt=""></div>
+			<div><img src="images/susliks.png" title="" alt=""></div>
+			<div><img src="images/susliks.png" title="" alt=""></div>
+			<div><img src="images/susliks.png" title="" alt=""></div>
+			<div><img src="images/susliks.png" title="" alt=""></div>
+			<div><img src="images/susliks.png" title="" alt=""></div>
+			<div><img src="images/susliks.png" title="" alt=""></div>
+		</div>
+	</div>
+</body>
+</html>
