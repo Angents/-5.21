@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>饼状图</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/pie.css" />
+    <script src="../js/jquery-1.11.3.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="../js/pie.js" charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrap clearfix">
+        <h1 class="title">PieChart</h1>
+        <div class="chart-body">
+            <canvas id="cav" class="chart" width="900" height="400">您的浏览器不支持canvas</canvas>
+        </div>
+        <div class="import">
+            <label for="arr">请输入您要显示的数据(用逗号隔开)</label>
+            <input type="text" id="arr">
+            <input type="button" value="显示图表">
+        </div>
+    </div>
+    <script>
+        $.ajax({
+            type: "get",
+            url : "../json/data.json",
+            dataType: "json",
+            success: function() {
+                console.log(data);
+            }
+        })
+        // 想通过页面更改属性，重绘图表。失败了！！！
+        var attr = new Array();
+        $(".import input").eq(1).click(function(event) {
+            ctx.clearRect(0, 0, 900, 400);
+            attr = $("#arr").prop("value").split(",");
+            data[0].num = parseInt(attr[0]);
+            data[1].num = parseInt(attr[1]);
+            data[2].num = parseInt(attr[2]);
+            data[3].num = parseInt(attr[3]);
+            data[4].num = parseInt(attr[4]);
+            data[5].num = parseInt(attr[5]);
+            data[6].num = parseInt(attr[6]);
+            function sumData(){
+                for(var i = 0; i < data.length; i++){
+                    sum += data[i].num;
+                };
+            }
+            sumData();
+            function lastSum(i){
+                lastsum = 0;
+                for (var j = 0; j < i; j++) {
+                    lastsum += data[j].num;
+                };
+            }
+            drawChart(200);
+            drawitem();
+            console.log(lastsum)
+        });//遗憾，不能动态获取这些值改变图表- -
+    </script>
+
+</body>
+</html>

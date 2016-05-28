@@ -1,0 +1,11 @@
+{
+"data": [
+    {"name": "第一组", "num": 49, "color": "#fe0003"},
+    {"name": "第二组", "num": 56, "color": "#fe9102"},
+    {"name": "第三组", "num": 89, "color": "#ff0"},
+    {"name": "第四组", "num": 20, "color": "#009f04"},
+    {"name": "第五组", "num": 34, "color": "#00c4bd"},
+    {"name": "第六组", "num": 67, "color": "#3a0299"},
+    {"name": "第七组", "num": 12, "color": "#8e018e"}
+]
+}

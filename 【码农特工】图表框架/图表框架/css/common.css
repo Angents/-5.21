@@ -1,0 +1,81 @@
+.wrap {
+    position: relative;
+    width: 800px;
+    height: 430px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+.wrap h2 {
+    width: 800px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.con {
+    width: 760px;
+    height: 300px;
+    padding: 50px 20px 30px;
+    background-color: skyblue;
+}
+.levelOne, .levelTwo, .levelThree, .levelFour, .levelFive {
+    width: 760px;
+    height: 50px;
+    background-color: #cdcdcd;          
+}
+.con span {
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.con strong {
+    float: left;
+    width: 680px;
+    height: 24px;
+    border-bottom: 1px solid black;
+} 
+.spring, .summer, .autumn, .winter {
+    position: absolute;
+    bottom: 25px;   
+    width: 100px;
+    height: 280px;
+    /*background-color: white;*/
+}
+.spring span, .summer span, .autumn span, .winter span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.first, .second {
+    position: absolute;
+    bottom: 30px;
+    width: 50px;
+    height: 0px;
+}
+.first {
+    left: 0;
+    background-color: blue;
+}
+.second {
+    left: 50px;
+    background-color: red;
+}
+.inp {
+    width: 800px;
+    margin: 0 auto;
+}
+#one {
+    color: blue;
+}
+#two {
+    color: red;
+}
+.word {
+    width: 800px;
+    margin: 0 auto;
+}

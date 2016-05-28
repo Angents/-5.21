@@ -1,0 +1,52 @@
+.wrap {
+    width: 800px;
+    /*height: 550px;*/
+    padding: 0 100px;
+    margin: 10px auto;
+}
+.wrap h1 {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+.wrap div {          
+    height: 0; 
+    margin: 10px auto;
+    border-left: 40px solid transparent; 
+    border-right: 40px solid transparent;
+    text-align: center;
+}
+.one {
+    width: 400px;
+    border-top: 80px solid red;               
+}
+.two {
+    width: 320px;
+    border-top: 80px solid orange; 
+}
+.three {
+    width: 240px;
+    border-top: 80px solid yellow; 
+}
+.four {
+    width: 160px;
+    border-top: 80px solid green; 
+}
+.five {
+    width: 80px;
+    border-top: 80px solid blue; 
+}
+.wrap .six {
+    width: 0; 
+    height: 0; 
+    border-left: 40px solid transparent; 
+    border-right: 40px solid transparent; 
+    border-top: 80px solid pink; 
+}
+.press {
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+}

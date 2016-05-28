@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>图表</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <script src="../js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <h2>XX季度销售情况（百分比）</h2>
+        <div class="con">
+            <div class="levelOne">
+                <span>100</span>
+                <strong></strong>
+            </div>
+            <div class="levelTwo">
+                <span>80</span>
+                <strong></strong>
+            </div>
+            <div class="levelThree">
+                <span>60</span>
+                <strong></strong>
+            </div>
+            <div class="levelFour">
+                <span>40</span>
+                <strong></strong>
+            </div>
+            <div class="levelFive" style="height: 75px">
+                <span>20</span>
+                <strong></strong>
+            </div>
+            <!-- <canvas id="show" class="chart" height="800" width="500"></canvas> -->
+        </div>
+        <div class="spring" id="spr" style="left: 95px">
+            <div class="first"></div>
+            <div class="second"></div>
+            <span>春季</span>
+        </div>
+        <div class="summer" id="sum" style="left: 265px">
+            <div class="first"></div>
+            <div class="second"></div>
+            <span>夏季</span>
+        </div>
+        <div class="autumn" id="aut" style="left: 435px">
+            <div class="first"></div>
+            <div class="second"></div>
+            <span>秋季</span>
+        </div>
+        <div class="winter" id="win" style="left: 605px">
+            <div class="first"></div>
+            <div class="second"></div>
+            <span>冬季</span>
+        </div>
+    </div>
+    <div class="inp">
+        <label for="one">产品一:</label>
+        <input type="text" id="one" />
+        <label for="two">产品二:</label>
+        <input type="text" id="two"/>
+        <input type="button" value="显示" />
+    </div>
+    <p class="word"> 每个输入框内输入四个100以内数字，以逗号隔开，之后点击按钮生成图表</p>
+    <script type="text/javascript" src="../js/bar.js"></script>
+</body>
+</html>
