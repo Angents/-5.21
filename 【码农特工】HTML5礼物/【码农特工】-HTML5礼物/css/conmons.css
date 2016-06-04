@@ -1,0 +1,323 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    line-height: normal;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.contit, .conmain {
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.contit dl, .conmain dl {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.contit dl dd, .conmain dl dd {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    padding: 20% 0;
+}
+.contit dl dd p, .conmain dl dd p{
+    margin-top: 1%;
+    /*text-align: left;*/
+    color: #7e4a32;
+}
+.contit .contit-size {
+    font-size: 2rem;
+    color: #696867;
+}
+.contit .contit-sizetwo {
+    font-size: 1.2rem;
+}
+.contit dt, .conmain dt {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+.contit dt img, .conmain dt img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contit .show-img, .conmain .show-img {
+    display: block;
+}
+.word-pic {
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg_3.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.word{
+    width: 100%;   
+    height: 30%;
+    padding: 20% 0;
+}
+.pic {
+    position: relative;
+    width: 100%;
+    height: 40%;
+}
+.word p {
+    color: #654521;
+}
+.pic img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.pic img:nth-child(3), .pic img:nth-child(6) {
+    -webkit-transform: rotate(15deg);
+       -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+         -o-transform: rotate(15deg);
+            transform: rotate(15deg);
+}
+.pic img:nth-child(2) {
+    -webkit-transform: rotate(-15deg);
+       -moz-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+         -o-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+}
+.pic img:nth-child(1) {
+    -webkit-transform: rotate(5deg);
+       -moz-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+         -o-transform: rotate(5deg);
+            transform: rotate(5deg);
+}
+.pic img:nth-child(4) {
+    -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+         -o-transform: rotate(20deg);
+            transform: rotate(20deg);
+}
+.send {
+    width: 100%;
+    height: 100%;
+}
+.bg {
+    background: url("../images/roll.png") no-repeat;
+    background-size: 100% 100%; 
+}
+.title {
+    width: 100%;
+    height: 10%;
+    padding: 30% 0;
+    color: #714a32;
+    font-size: 2rem;
+}
+.send img {
+    display: block;
+    width: 100%;
+    height: 30%;
+}
+.send input {
+    width: 60%;
+    height: 6%;
+    margin-bottom: 5%;
+    border: none;
+    background-color: #eee;
+    font-size: 1rem;
+    text-indent: 1em;
+    outline: none;
+    border-radius: 10px;
+}
+.send .content {
+    width: 60%;
+    height: 25%;
+}
+.button {
+    width: 100%;
+    height: 100%;
+}
+.button button {
+    width: 30%;
+    height: 5%;
+    border: none;
+    background-color: #b39d78;
+    font-size: 1rem;
+    border-radius: 10px;
+    outline: none;
+}
+.button a {
+    color: #714a32;
+}
+/* 
+* @Author: anchen
+* @Date:   2016-06-04 16:51:59
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-06-04 19:29:33
+*/
+
+.contit, .conmain {
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.contit dl, .conmain dl {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.contit dl dd, .conmain dl dd {
+    position: absolute;
+    top: 0;
+    left: -200%;
+    width: 200%;
+}
+.contit dl dd p, .conmain dl dd p {
+    position: absolute;
+    color: #7e4a32;
+    width: 50%;
+    -webkit-transform: translate(50%, 0);
+       -moz-transform: translate(50%, 0);
+        -ms-transform: translate(50%, 0);
+         -o-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+}
+.contit dl dd p:nth-child(1) {
+    left: 0;
+    top: 2rem;
+}
+.contit dl dd p:nth-child(2) {
+    top: 4rem;
+    left: -100%;
+}
+.contit dl dd p:nth-child(3) {
+    top: 6rem;
+    left: -200%;
+}
+.contit dl dd p:nth-child(4) {
+    top: 8rem;
+    left: -300%;
+}
+.contit dl dd p:nth-child(5) {
+    top: 11rem;
+    left: -400%;
+}
+.conmain dl dd p:nth-child(1) {
+    left: 0;
+    top: 2rem;
+}
+.conmain dl dd p:nth-child(2) {
+    top: 4rem;
+    left: -100%;
+}
+.conmain dl dd p:nth-child(3) {
+    top: 6rem;
+    left: -200%;
+}
+.conmain dl dd p:nth-child(4) {
+    top: 8rem;
+    left: -300%;
+}
+.conmain dl dd p:nth-child(5) {
+    top: 10rem;
+    left: -400%;
+}
+.conmain dl dd p:nth-child(6) {
+    top: 12rem;
+    left: -500%;
+}
+.conmain dl dd p:nth-child(7) {
+    top: 14rem;
+    left: -600%;
+}
+.conmain dl dd p:nth-child(8) {
+    top: 16rem;
+    left: -700%;
+}
+.contit .contit-size {
+    font-size: 2rem;
+    color: #696867;
+}
+.contit .contit-sizetwo {
+    font-size: 1.2rem;
+}
+.contit dt, .conmain dt {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+.contit dt img, .conmain dt img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contit .show-img, .conmain .show-img {
+    display: block;
+}
+/*感恩页面*/
+.thanksfather {
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg_4.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.thanksfather-con {
+    width: 100%;
+    height: 60%;
+    padding-top: 72%;
+}
+.thanksfather span {
+    display: block;
+    color: #fff;
+}
